@@ -14,7 +14,8 @@ public class MatInput : MonoBehaviour
 
     void Start()
     {
-        number1 = (int)Random.Range(1.0f, 100.0f);
+
+        number1 = (int)(Random.Range(1.0f, 100.0f)*10);
         firstTerm.text = number1.ToString();
         number2 = (int)Random.Range(1.0f, 100.0f);
         secondTerm.text = number2.ToString();
@@ -25,7 +26,7 @@ public class MatInput : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             enter = true;
         }
